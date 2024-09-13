@@ -1,12 +1,11 @@
 {
   "name": "json-ref-lite",
-  "version": "1.0.73",
-  "description":"Extremely light weight way to resolve jsonschema '$ref' references & inheritance: create circular/graphs, fractals from json (browser/coffeescript/javascript).",
+  "version": "1.0.74",
+  "description": "Extremely light weight way to resolve jsonschema '$ref' references & inheritance: create circular/graphs, fractals from json (browser/coffeescript/javascript).",
   "main": "index.js",
   "dependencies": {
-    "property-expr": "^1.3.1"
+    "property-expr": "^2.0.6"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "coffee test/test.coffee > test/test.now ; diff --brief test/test.now test/test.out && echo 'test OK' || exit 1",
     "browser": "/bin/bash -c 'coffee -c *.coffee test/*.coffee && browserify -r .:json-ref-lite | uglifyjs -o json-ref-lite.min.js'"
